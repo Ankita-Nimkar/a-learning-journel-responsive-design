@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+
+  color: #151515;
+}
+.main-article {
+  padding: 1.25em;
+}
+.main-article-date {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0em;
+}
+.main-article-title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+.main-article-para1 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+}
+img {
+  width: 100%;
+}
+.main-article-para2 {
+  font-size: 1rem;
+}
+br {
+  margin: 20px 0;
+}
+strong {
+  margin: 20px 0;
+}
+.recent-post {
+  text-align: center;
+
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0em;
+}
+@media (min-width: 520px) {
+  .article-paading {
+    padding: 0 60px;
+  }
+  .article-listing {
+    display: grid;
+    grid-template: 1fr /1fr 1fr 1fr;
+    grid-gap: 1.625em;
+    padding: 0 1.25em;
+  }
+}

@@ -1,0 +1,265 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* header */
+header {
+  height: 3.6875em;
+  /* width: 414px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.3em;
+}
+.logo {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+.logo-img {
+  width: 1.4em;
+}
+.logo-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+
+/* hamberger-menu */
+.line {
+  height: 3px;
+  width: 25px;
+  background-color: #090909;
+  margin: 3px 0;
+}
+.hamburger-modal {
+  width: 100%;
+  position: absolute;
+  left: 0em;
+  top: 3.67em;
+  padding: 2em 2em;
+  background-image: linear-gradient(to bottom, #020202, #060606e0, #3e3333a6);
+  color: #ececec;
+  text-align: center;
+  height: 291px;
+  text-shadow: 0px 0px 5px #9e9e9e;
+}
+.hamburger-modal ul {
+  list-style: none;
+}
+.hamburger-modal li {
+  margin: 2em 0;
+}
+.hamburger-modal a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #ececec;
+}
+a:hover,
+a:focus {
+  color: #ba9797;
+}
+
+/* hero */
+.hero {
+  padding: 5.4375em 1.3em 1.3em 1.3em;
+  background: url("images/article-image-hero.png");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-bottom: 0.875em;
+}
+.hero-date {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.1;
+  margin: 0;
+}
+.hero-title a {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  margin: 0.25em 0;
+
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.hero-title a:hover,
+a:focus {
+  color: #ba9797;
+}
+
+.hero-preview {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.21;
+  letter-spacing: 0em;
+  margin: 0;
+}
+
+/* article-listing */
+.article-listing {
+  padding: 1.25em;
+}
+.group-1 {
+  margin-bottom: 2.5em;
+}
+.group-2 {
+  margin-bottom: 2.5em;
+}
+
+.article-listing img {
+  width: 100%;
+}
+.date {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0em;
+  margin: 0.78em 0 0.56em 0;
+  color: #000000;
+}
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0em;
+  margin: 0;
+  margin-bottom: 0.56em;
+
+  color: #141414;
+}
+.preview {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: 0em;
+  color: #505050;
+  margin: 0;
+}
+
+/* view-more */
+.view-more {
+  text-align: center;
+  margin-bottom: 2.6875em;
+}
+.view-more a {
+  color: #000000;
+
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  height: 6.5625em;
+  color: #ececec;
+  background-color: #202020;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer p {
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+
+  margin-bottom: 5px;
+}
+.copyright {
+  font-weight: 400;
+  margin: 0;
+}
+.footer-text {
+  margin-top: 2.3125em;
+}
+/* utility */
+.hidden {
+  display: none;
+}
+.group-4,
+.group-5,
+.group-6 {
+  display: none;
+}
+
+.header-nav {
+  display: none;
+}
+
+/* media-Query */
+@media (min-width: 520px) {
+  .header-nav {
+    display: flex;
+  }
+  .header-ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.2em;
+  }
+  .header-li a {
+    text-decoration: none;
+    color: #090909;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: 0em;
+  }
+  nav {
+    display: flex;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+  .hero {
+    background-image: url("images/blog-image-hero.png");
+    background-position: center;
+    background-size: cover;
+    padding: 18em 0 3.75em 3em;
+    margin-bottom: 0;
+  }
+  .hero-text {
+    max-width: 564px;
+  }
+  .hero-date {
+    font-size: 1.25rem;
+    line-height: 1.12;
+  }
+  .hero-title {
+    font-size: 2.15rem;
+  }
+  .hero-preview {
+    font-size: 0.9rem;
+  }
+  .group-4,
+  .group-5,
+  .group-6 {
+    display: grid;
+  }
+
+  .article-listing {
+    padding: 3em;
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1fr 1fr;
+    grid-gap: 1.625em;
+  }
+}
